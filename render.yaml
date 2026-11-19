@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tanormal-api-rafaell
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/linhas
+    envVars:
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
